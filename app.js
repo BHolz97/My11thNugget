@@ -90,7 +90,7 @@ app.post("/compose", function (req, res) {
 
   let mailOptions = {
     from: 'my11thnugget@gmail.com',
-    to: 'brndnhlz@gmail.com, brandonholz97@gmail.com',
+    to: 'brndnhlz@gmail.com, caitlin.campbell.sa@gmail.com',
     subject: 'New Post On My 11th Nugget',
     text: 'Hi! There is a new post on My 11th Nugget - check it out!'
   };
