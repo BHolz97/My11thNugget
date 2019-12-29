@@ -132,12 +132,8 @@ app.get("/posts/:postId", function (req, res) {
 
   const requestedPostId = req.params.postId;
 
-  console.log(requestedPostId); //test
+  Post.findOne({title: requestedPostId}, function(err, post) {
 
-  //Post.findOne({_id: requestedPostId}, function(err, post){
-  Post.findOne({
-    title: requestedPostId
-  }, function (err, post) {
     res.render("post", {
       title: post.title,
       content: post.content
