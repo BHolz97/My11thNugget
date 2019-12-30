@@ -67,7 +67,7 @@ app.get("/our-song", function (req, res) {
 
 app.post("/compose", function (req, res) {
   const post = new Post({
-    title: req.body.postTitle,
+    title: req.body.postTitle.trim(), //Trimming because if it saves to mongo with whitespace at end of title, the server will truncate the whitespace ie will be trying to find a post with title "Hello" when it is isaved in Mongo as "Hello "
     content: req.body.postBody
   });
 
@@ -80,28 +80,28 @@ app.post("/compose", function (req, res) {
   // Email functionality 
   // **********************************************************************************
 
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'my11thnugget@gmail.com',
-      pass: 'Nugget270719'
-    }
-  });
+  // let transporter = nodemailer.createTransport({
+  //   service: 'gmail',
+  //   auth: {
+  //     user: 'my11thnugget@gmail.com',
+  //     pass: 'Nugget270719'
+  //   }
+  // });
 
-  let mailOptions = {
-    from: 'my11thnugget@gmail.com',
-    to: 'brndnhlz@gmail.com, caitlin.campbell.sa@gmail.com',
-    subject: 'New Post On My 11th Nugget',
-    text: 'Hi! There is a new post on My 11th Nugget - check it out!'
-  };
+  // let mailOptions = {
+  //   from: 'my11thnugget@gmail.com',
+  //   to: 'brndnhlz@gmail.com, caitlin.campbell.sa@gmail.com',
+  //   subject: 'New Post On My 11th Nugget',
+  //   text: 'Hi! There is a new post on My 11th Nugget - check it out!'
+  // };
 
-  transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-      console.log('Error sending email', err);
-    } else {
-      console.log('Successfully sent email');
-    }
-  });
+  // transporter.sendMail(mailOptions, function (err, data) {
+  //   if (err) {
+  //     console.log('Error sending email', err);
+  //   } else {
+  //     console.log('Successfully sent email');
+  //   }
+  // });
 
 
   // **********************************************************************************
