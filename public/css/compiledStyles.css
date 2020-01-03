@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap");
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  /* Brandon */
+  background: #7cd4d4 url(http://www.graphicartsunit.com/images/noise.png);
+  /* color: #f0f5f9; */
+}
+
+/* .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  } */
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* background-color: #1abc9c; */
+  background-color: #1e2022;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Brandon code */
+.button {
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #364f6b;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  border: 3px solid #364f6b;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.button:before {
+  border: 3px solid #f9f6f1;
+  background: url(http://www.graphicartsunit.com/images/noise2.png);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.comp-button {
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #364f6b;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  border: 3px solid #364f6b;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.comp-button:before {
+  border: 3px solid #f9f6f1;
+  background: url(http://www.graphicartsunit.com/images/noise2.png);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #03384b;
+}
+
+.nav-button {
+  border-radius: 5px;
+}
+
+.nav-button:before {
+  border-radius: 5px;
+  left: 7px;
+  top: 5px;
+}
+
+.nav-comp-button {
+  border-radius: 5px;
+}
+
+.nav-comp-button:before {
+  border-radius: 5px;
+  left: 7px;
+  top: 5px;
+}
+
+.navbar-brand {
+  font-family: 'Permanent Marker';
+  font-size: 5rem;
+  color: #f0f5f9;
+}
+
+.navbar-default .navbar-brand {
+  color: #364f6b;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #364f6b;
+}
+
+.content-container {
+  margin-top: 150px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  margin: auto;
+  width: 85%;
+}
+
+.post {
+  margin-bottom: 35px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.navbar-brand.button.nav-button {
+  border: none;
+}
+
+.brand-heading {
+  position: absolute;
+  top: 43%;
+  left: 25%;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 5px 5px #fc5185, 10px 10px #364f6b;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #364f6b;
+  font-size: 0.9em;
+}
+
+h1 {
+  color: #364f6b;
+}
+/*# sourceMappingURL=compiledStyles.css.map */
