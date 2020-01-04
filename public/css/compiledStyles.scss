@@ -139,8 +139,8 @@ html {
 }
 
 .navbar-brand {
-  // font-family: 'Permanent Marker';
-  font-family: 'Poppins';
+  font-family: 'Permanent Marker';
+  // font-family: 'Poppins';
   font-weight: bold;
   font-size: 5rem;
   color: #f0f5f9;
@@ -218,13 +218,13 @@ h1 {
 }
 
 .fullstop {
-  font-family: 'Lobster';
+  font-family: 'Permanent Marker';
   font-size: 1.1em;
   color: $accentcolor;
 }
 
 .divider {
-  border: 1px solid $textcolor;
+  border: 1px solid #9b9b9b;
   width: 10%;
   height: 1px;
   margin: auto;
@@ -269,6 +269,7 @@ u {
 
   .divider {
     width: 40%;
+    border-width: 2px;
   }
   
   h1 {
