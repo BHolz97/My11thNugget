@@ -6,6 +6,7 @@ $maincolor: #3fc1c9;
 $accentcolor: #fc5185;
 $lightcolor: #f5f5f5;
 $textcolor: #364f6b;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
 
@@ -130,9 +131,16 @@ html {
   }
   
   .navbar-brand {
-    font-family: 'Permanent Marker';
+    // font-family: 'Permanent Marker';
+    font-family: 'Poppins';
+    font-weight: bold;
     font-size: 5rem;
     color: #f0f5f9;
+    margin-top: 5px;
+  }
+
+  .navbar-default .navbar-brand:hover {
+    color: $textcolor;
   }
   
   .navbar-default .navbar-brand {
@@ -144,20 +152,22 @@ html {
   }
 
   .content-container {
-    margin-top: 150px;
+    position: relative;
     // background-color: white;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 2%;
+    //padding-top: 2%;
     margin: auto;
     width: 85%;
+    top: 20%;
   }
 
   .post {
       //border: 2px solid black;
       //border-radius: 5px;
       //box-shadow: 2px 2px 8px #888888;
-      margin-bottom: 35px;
+      margin-bottom: 10px;
+      margin-top: 30px;
       padding-left: 2%;
       padding-right: 2%;
       padding-bottom: 2%;
@@ -179,8 +189,8 @@ html {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     text-shadow: 
-                          5px 5px $accentcolor,
-                          10px 10px $textcolor;
+                          // 5px 5px $accentcolor,
+                          3px 3px $textcolor;
   }
   
   body {
@@ -196,7 +206,47 @@ html {
   
   h1 {
     color: $textcolor;
+    font-weight: bold;
   }
+
+.fullstop {
+  font-family: 'Lobster';
+  font-size: 1.1em;
+  color: $accentcolor;
+}
+
+.divider {
+  border: 1px solid $textcolor;
+  width: 10%;
+  height: 1px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.container-body {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-default .navbar-brand {
+    font-size: 2.7em;
+}
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 5px solid $accentcolor;
+}
+
+.our-song-container {
+  margin: auto;
+  width: 80%;
+}
+
+.compose-container {
+  margin: auto;
+  width: 80%;
+}
 
 
 

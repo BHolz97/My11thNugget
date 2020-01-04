@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap");
 html {
   min-height: 100%;
@@ -120,9 +121,15 @@ html {
 }
 
 .navbar-brand {
-  font-family: 'Permanent Marker';
+  font-family: 'Poppins';
+  font-weight: bold;
   font-size: 5rem;
   color: #f0f5f9;
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #364f6b;
 }
 
 .navbar-default .navbar-brand {
@@ -134,16 +141,17 @@ html {
 }
 
 .content-container {
-  margin-top: 150px;
+  position: relative;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 2%;
   margin: auto;
   width: 85%;
+  top: 20%;
 }
 
 .post {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
@@ -165,7 +173,7 @@ html {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  text-shadow: 5px 5px #fc5185, 10px 10px #364f6b;
+  text-shadow: 3px 3px #364f6b;
 }
 
 body {
@@ -181,5 +189,45 @@ p {
 
 h1 {
   color: #364f6b;
+  font-weight: bold;
+}
+
+.fullstop {
+  font-family: 'Lobster';
+  font-size: 1.1em;
+  color: #fc5185;
+}
+
+.divider {
+  border: 1px solid #364f6b;
+  width: 10%;
+  height: 1px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.container-body {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-default .navbar-brand {
+    font-size: 2.7em;
+  }
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 5px solid #fc5185;
+}
+
+.our-song-container {
+  margin: auto;
+  width: 80%;
+}
+
+.compose-container {
+  margin: auto;
+  width: 80%;
 }
 /*# sourceMappingURL=compiledStyles.css.map */

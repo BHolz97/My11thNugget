@@ -37,7 +37,8 @@ const Post = mongoose.model("Post", postSchema);
 
 app.get("/", function (req, res) {
 
-  Post.find({}, function (err, posts) {
+  // Post.find({}, function (err, posts) {
+    Post.find({}).sort([['_id', -1]]).exec(function(err, posts) {
     res.render("home", {
       startingContent: homeStartingContent,
       posts: posts
